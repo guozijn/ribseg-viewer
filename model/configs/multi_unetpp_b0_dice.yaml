@@ -1,0 +1,8 @@
+NAME: 'multi_unetpp_b0_dice'
+
+DATA:
+  INP_CHANNEL: 1
+
+MODEL:
+  NAME: "unet++(b0)"
+  NUM_CLASSES: 20

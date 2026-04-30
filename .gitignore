@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Model weights (do not commit)
+model/*.pth
+model/*.pt
+model/*.ckpt
+model/*.safetensors
+
+# Runtime results
+/tmp/ribseg_results/
