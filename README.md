@@ -51,10 +51,10 @@ All other settings have sensible defaults. Override them as needed:
 ```bash
 source .venv/bin/activate
 cd backend
-uvicorn app.main:app --reload --port 8010
+uvicorn app.main:app --reload --port 8110
 ```
 
-The server starts on `http://localhost:8010`. The model is loaded at startup; the first request does not pay a cold-start penalty.
+The server starts on `http://localhost:8110`. The model is loaded at startup; the first request does not pay a cold-start penalty.
 
 ### 4. Install and start the frontend
 
@@ -64,7 +64,7 @@ npm install
 npm run dev -- --port 5174
 ```
 
-The Vite dev server starts on `http://localhost:5174` and proxies `/health`, `/model`, `/infer`, and `/results` to `http://localhost:8010`. By default, the frontend uses relative API paths so the proxy also works when opening the app through a remote hostname.
+The Vite dev server starts on `http://localhost:5174` and proxies `/health`, `/model`, `/infer`, and `/results` to `http://localhost:8110`. By default, the frontend uses relative API paths so the proxy also works when opening the app through a remote hostname.
 
 Open `http://localhost:5174` in a browser.
 
